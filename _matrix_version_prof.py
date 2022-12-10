@@ -119,8 +119,7 @@ class Matrix:
 
 	# TODO: Addition
 	def __add__(self, other):
-		if not self.has_same_dimensions(other):
-			raise ValueError(Matrix)
+
 		result = Matrix(self.height, self.width)
 		#for i in range(len(self)):
 		#	result.data[i] = self.data[i] + other.data[i]

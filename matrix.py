@@ -164,7 +164,10 @@ class Matrix:
 	# TODO: Multiplication scalaire avec le scalaire à gauche
 
 	def __abs__(self):
+		def __rmul__(self, other):
+			return self * other
 		return Matrix(self.height, self.width, [abs(e) for e in self.data])
+
 
 	# TODO: Égalité entre deux matrices
 	def __eq__(self, other):
